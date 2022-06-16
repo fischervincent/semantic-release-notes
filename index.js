@@ -25,7 +25,7 @@ module.exports = async (cliOptions = {}, { cwd = process.cwd(), env = process.en
     ...context,
     options,
     commits,
-    lastRelease: currentRelease,
+    lastRelease,
     nextRelease,
   });
 
