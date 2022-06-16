@@ -7,7 +7,8 @@
     "semantic-release-notes": "bin/semantic-release-notes.js"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
@@ -45,5 +46,8 @@
     "semver": "^7.3.2",
     "semver-diff": "^3.1.1",
     "yargs": "^16.2.0"
+  },
+  "devDependencies": {
+    "semantic-release": "^19.0.3"
   }
 }
