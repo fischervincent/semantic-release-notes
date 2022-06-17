@@ -12,6 +12,8 @@ Usage:
     })
     .option('last-tag', { describe: 'Git last tag', type: 'string', group: 'Options' })
     .option('next-tag', { describe: 'Git tag to release', type: 'string', group: 'Options' })
+    .option('is-azure-dev-ops', { describe: 'To overwrite commits to be correctly formatted', type: 'boolean', group: 'Options' })
+    .option('azure-work-item', { describe: 'Url to the azure devops work items', type: 'string', group: 'Options' })
     .strict(false)
     .exitProcess(false);
 

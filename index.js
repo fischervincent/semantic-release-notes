@@ -3,6 +3,7 @@ const envCi = require('env-ci');
 const getConfig = require('./lib/get-config');
 const getCommits = require('./lib/get-commits');
 const getReleaseToAdd = require('./lib/get-release-to-add');
+const rewriteAzureCommit = require('./lib/rewrite-azure-commit');
 
 module.exports = async (cliOptions = {}, { cwd = process.cwd(), env = process.env, stdout, stderr } = {}) => {
   const context = {
@@ -19,7 +20,11 @@ module.exports = async (cliOptions = {}, { cwd = process.cwd(), env = process.en
 
   const { lastRelease, nextRelease } = await getReleaseToAdd(context);
 
-  const commits = await getCommits({ ...context, lastRelease, nextRelease });
+  let commits = await getCommits({ ...context, lastRelease, nextRelease });
+
+  if (options.isAzureDevOps) {
+    commits = commits.map(rewriteAzureCommit(options))
+  }
 
   nextRelease.notes = await plugins.generateNotes({
     ...context,

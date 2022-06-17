@@ -32,3 +32,10 @@ Example:
   ]
 }
 ```
+
+### Options
+
+| Option          | Description                                                                                                         | Default   |
+| :-------------- | :------------------------------------------------------------------------------------------------------------------ | :-------- |
+| `isAzureDevOps` | If true, rewrite the commits message so that it is correctly parsed by release-notes-generator.                     | false     |
+| `azureWorkItem` | Path to azure work items. If defined and isAzureDevOps is true, it inserts the work item link to the commit message |           |
