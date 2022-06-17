@@ -1,6 +1,6 @@
 {
   "name": "semantic-release-notes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "like semantic-release but specific to generate release notes between two tags",
   "main": "index.js",
   "bin": {
