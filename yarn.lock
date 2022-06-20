@@ -415,6 +415,21 @@
     lodash "^4.17.4"
     read-pkg-up "^7.0.0"
 
+"@semantic-release/release-notes-generator@semantic-release/release-notes-generator":
+  version "0.0.0-development"
+  resolved "https://codeload.github.com/semantic-release/release-notes-generator/tar.gz/c5b3fbb437fad719e719a7daaeb0b467679f5854"
+  dependencies:
+    conventional-changelog-angular "^5.0.0"
+    conventional-changelog-writer "^5.0.0"
+    conventional-commits-filter "^2.0.0"
+    conventional-commits-parser "^3.2.3"
+    debug "^4.0.0"
+    get-stream "^6.0.0"
+    import-from "^4.0.0"
+    into-stream "^6.0.0"
+    lodash "^4.17.4"
+    read-pkg-up "^7.0.0"
+
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
