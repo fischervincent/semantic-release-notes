@@ -26,7 +26,8 @@ Example:
       {
         "notifyOnSuccess": true,
         "notifyOnFail": true,
-        "discordWebhook": "https://my.webhook.com"
+        "discordWebhookId": "ID",
+        "discordWebhookToken": "AAAA",
       }
     ]
   ]
