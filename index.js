@@ -1,4 +1,5 @@
 const envCi = require('env-ci');
+const hookStd = require('hook-std');
 
 const getConfig = require('./lib/get-config');
 const getCommits = require('./lib/get-commits');
